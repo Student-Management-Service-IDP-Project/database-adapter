@@ -1,0 +1,88 @@
+[{
+  "_id": {
+    "$oid": "6623f8a5d2369eb4e1894dd8"
+  },
+  "course_name": "Chemestry",
+  "weekday": "Tuesday",
+  "start_hour": "13:00",
+  "end_hour": "15:00",
+  "location": "CH101",
+  "max_students": "90"
+},
+{
+  "_id": {
+    "$oid": "6623f8d0d2369eb4e1894dd9"
+  },
+  "course_name": "Biology",
+  "weekday": "Wednesday",
+  "start_hour": "11:00",
+  "end_hour": "13:00",
+  "location": "BL102",
+  "max_students": "100"
+},
+{
+  "_id": {
+    "$oid": "6623f8f2d2369eb4e1894dda"
+  },
+  "course_name": "Physics",
+  "weekday": "Thursday",
+  "start_hour": "10:00",
+  "end_hour": "12:00",
+  "location": "PH103",
+  "max_students": "80"
+},
+{
+  "_id": {
+    "$oid": "6623f911d2369eb4e1894ddb"
+  },
+  "course_name": "Computer Science",
+  "weekday": "Friday",
+  "start_hour": "15:00",
+  "end_hour": "17:00",
+  "location": "CS104",
+  "max_students": "70"
+},
+{
+  "_id": {
+    "$oid": "6623f92fd2369eb4e1894ddc"
+  },
+  "course_name": "English Literature",
+  "weekday": "Monday",
+  "start_hour": "09:00",
+  "end_hour": "11:00",
+  "location": "EL107",
+  "max_students": "60"
+},
+{
+  "_id": {
+    "$oid": "6623f94ed2369eb4e1894ddd"
+  },
+  "course_name": "History",
+  "weekday": "Wednesday",
+  "start_hour": "14:00",
+  "end_hour": "16:00",
+  "location": "HS102",
+  "max_students": "70"
+},
+{
+  "_id": {
+    "$oid": "6623f9c5d2369eb4e1894dde"
+  },
+  "course_name": "Mathematics",
+  "weekday": "Thursday",
+  "start_hour": "08:00",
+  "end_hour": "10:00",
+  "location": "MA105",
+  "max_students": "80"
+},
+{
+  "_id": {
+    "$oid": "6623facbd2369eb4e1894de8"
+  },
+  "course_name": "Geography",
+  "weekday": "Tuesday",
+  "start_hour": "12:00",
+  "end_hour": "14:00",
+  "location": "GG103",
+  "max_students": "50"
+}]

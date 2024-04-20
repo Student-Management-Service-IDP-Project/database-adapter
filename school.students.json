@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "6623f9f8d2369eb4e1894ddf"
+  },
+  "username": "Maria Garcia",
+  "course_name": "Chemestry"
+},
+{
+  "_id": {
+    "$oid": "6623fa0fd2369eb4e1894de0"
+  },
+  "username": "Emil Johnson",
+  "course_name": "Biology"
+},
+{
+  "_id": {
+    "$oid": "6623fa18d2369eb4e1894de1"
+  },
+  "username": "Emil Johnson",
+  "course_name": "Physics"
+},
+{
+  "_id": {
+    "$oid": "6623fa2bd2369eb4e1894de2"
+  },
+  "username": "Michael Brown",
+  "course_name": "Computer Science"
+},
+{
+  "_id": {
+    "$oid": "6623fa5fd2369eb4e1894de4"
+  },
+  "username": "Sophia Martinez",
+  "course_name": "English Literature"
+},
+{
+  "_id": {
+    "$oid": "6623fa75d2369eb4e1894de5"
+  },
+  "username": "Daniel Kim",
+  "course_name": "History"
+},
+{
+  "_id": {
+    "$oid": "6623fa7cd2369eb4e1894de6"
+  },
+  "username": "Daniel Kim",
+  "course_name": "Mathematics"
+},
+{
+  "_id": {
+    "$oid": "6623fa93d2369eb4e1894de7"
+  },
+  "username": "Ethan Garcia",
+  "course_name": "Geography"
+}]

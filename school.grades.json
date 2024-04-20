@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "6623fb02d2369eb4e1894de9"
+  },
+  "username": "Maria Garcia",
+  "course_name": "Chemestry",
+  "grade": 8
+},
+{
+  "_id": {
+    "$oid": "6623fb25d2369eb4e1894dea"
+  },
+  "username": "Emil Johnson",
+  "course_name": "Biology",
+  "grade": 9
+},
+{
+  "_id": {
+    "$oid": "6623fb2bd2369eb4e1894deb"
+  },
+  "username": "Emil Johnson",
+  "course_name": "Physics",
+  "grade": 9
+},
+{
+  "_id": {
+    "$oid": "6623fb44d2369eb4e1894dec"
+  },
+  "username": "Michael Brown",
+  "course_name": "Computer Science",
+  "grade": 7
+},
+{
+  "_id": {
+    "$oid": "6623fb5ad2369eb4e1894ded"
+  },
+  "username": "Sophia Martinez",
+  "course_name": "English Literature",
+  "grade": 8
+},
+{
+  "_id": {
+    "$oid": "6623fb78d2369eb4e1894dee"
+  },
+  "username": "Daniel Kim",
+  "course_name": "History",
+  "grade": 9
+},
+{
+  "_id": {
+    "$oid": "6623fb81d2369eb4e1894def"
+  },
+  "username": "Daniel Kim",
+  "course_name": "Mathematics",
+  "grade": 10
+},
+{
+  "_id": {
+    "$oid": "6623fb97d2369eb4e1894df0"
+  },
+  "username": "Ethan Garcia",
+  "course_name": "Geography",
+  "grade": 7
+}]
