@@ -2,107 +2,206 @@
 
 ### API
 
-Add student:
-**POST /student**
+#### What teachers can do:
+
+
+Add a student:
+**POST /teacher/add_student**
 
 `> Body:`
 ```
 {
-    username: "joedoe",
-    course_name: "Analiza Matematica"
+    username: "Maria Garcia",
+    course_name: "Chemestry"
 }
 ```
 
 `> Response:`
 
 *  `200 OK`
+```
+{
+    "message": "Student added successfully"
+}
+```
 *  `400 BAD REQUEST`
 
 
-Add course: **POST /course**
+Add a course: 
+**POST /teacher/add_course**
 
 `> Body:`
 ```
 {
-    course_name: "Analiza Matematica",
-    weekday: "Monday",
-    start_hour: "10:00",
-    end_hour: "12",
-    location: "EC105",
-    max_students: "120"
+    course_name: "Computer Science",
+    weekday: "Friday",
+    start_hour: "15:00",
+    end_hour: "17:00",
+    location: "CS104",
+    max_students: "70"
 }
 ```
 
 `> Response:`
 
 *  `200 OK`
+```
+{
+    "message": "Course added successfully"
+}
+```
 *  `400 BAD REQUEST`
 
-Add grade: **POST /student/grades**
+Add a grade:
+**POST /teacher/add_grade**
 
 `> Body:`
 ```
 {
-    username: "joedoe",
-    course_name: "Analiza Matematica",
-    grade: 10
+    username: "Maria Garcia",
+    course_name: "Chemestry",
+    grade: 8
 }
 ```
 `> Response:`
 
 *  `200 OK`
+```
+{
+    "message": "Grade added successfully"
+}
+```
 *  `400 BAD REQUEST`
 
-Add course material: **POST /course/materials**
+Add a course material:
+**POST /teacher/upload_material**
 
 `> Body:`
 ```
 {
-    course_name: "Analiza Matematica",
-    data: "Lorem Ipsum..."
+    course_name: "Chemestry",
+    data: "Atomic Structure Chapter 2"
 }
 ```
 
 `> Response:`
 
 *  `200 OK`
+```
+{
+    "message": "Material uploaded successfully"
+}
+```
 *  `400 BAD REQUEST`
 
-
-View grades: **GET /student/grades**
+#### What students can do:
+View grades: 
+**GET /student/grades**
 
 ```
 {
-    username: "joedoe",
-    course_name: "Analiza Matematica"
+    "username": "Emil Johnson",
+    "course_name": "Physics"
 }
 ```
+
 `> Response:`
+
 * `200 OK`
 ```
 {
-    grade: 10
+    grade: 9
 }
 ```
 *  `400 BAD REQUEST`
+```
+{
+    "message": "Grade not found"
+}
+```
 
-View student's courses: **GET /student/courses**
+View student's courses:
+**GET /student/courses**
 
 `> Body:`
 ```
 {
-    username: "joedoe",
+    username: "Maria Garcia",
 }
 ```
+
 `> Response:`
+
 * `200 OK`
 ```
 {
-    courses: [
-        "Analiza Matematica",
-        "Algebra Liniara",
-        "Programare 1"
+    "courses": [
+        "Chemestry"
     ]
 }
 ```
 *  `400 BAD REQUEST`
+```
+{
+    "message": "No courses found for the student"
+}
+```
+
+View course materials:
+**GET /student/materials**
+
+`> Body:`
+```
+{
+    course_name: "Chemestry",
+}
+```
+
+`> Response:`
+
+* `200 OK`
+```
+{
+    "materials": [
+        "Chemical Reactions Chapter 1",
+        "Atomic Structure Chapter 2"
+    ]
+}
+```
+*  `400 BAD REQUEST`
+```
+{
+    "message": "No materials found for the course"
+}
+```
+
+View course details:
+**GET /student/course_details**
+
+`> Body:`
+```
+{
+    course_name: "Chemestry",
+}
+```
+
+`> Response:`
+
+* `200 OK`
+```
+{
+    "course": {
+        "weekday": "Monday",
+        "start_hour": "10:00",
+        "end_hour": "12:00",
+        "location": "CS101",
+        "max_students": "50"
+    }
+}
+```
+*  `400 BAD REQUEST`
+```
+{
+    "message": "Course not found"
+}
+```
