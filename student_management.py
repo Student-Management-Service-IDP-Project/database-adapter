@@ -2,12 +2,12 @@ from flask import Flask, request, jsonify
 from pymongo import MongoClient
 
 app = Flask(__name__)
-client = MongoClient('mongodb://localhost:27017/',
+client = MongoClient(host='mongodb',
+                     port=27017,
                      username='school',
                      password='schoolpassword',
                      authSource='school')
 db = client['school']
-
 
 # Route for teachers to add students to a course
 @app.route('/teacher/add_student', methods=['POST'])
@@ -112,4 +112,4 @@ def view_course_details():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=3000)

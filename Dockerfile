@@ -14,5 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+ENV FLASK_APP="student_management.py"
 # Run the server.
-CMD [ "python", "./student_management.py" ]
+CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0", "--port=3000"]
+
