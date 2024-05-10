@@ -2,7 +2,10 @@ from flask import Flask, request, jsonify
 from pymongo import MongoClient
 
 app = Flask(__name__)
-client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient('mongodb://localhost:27017/',
+                     username='school',
+                     password='schoolpassword',
+                     authSource='school')
 db = client['school']
 
 
@@ -109,4 +112,4 @@ def view_course_details():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
